@@ -177,12 +177,334 @@ footer{
 		line-height: 30px;
 		width: 80%;
 		margin: 0 auto;
+		&::after{
+			content: '';
+			display: block;
+			width: 50px;
+			height: 1px;
+			background: #848789;
+			margin: 30px auto 0px;
+			
+		}
 		
 		
 
 	}
 }
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//!bariosa
+.bariosa{
+	width: 100%;
+	display: flex;
+	
+}
+.bariosa__right{
+	background: url('/img/boriosa/logo_rightcolomn.png') center no-repeat,url('/img/boriosa/img_rightcolomn.png') center/100% 100% no-repeat;
+	height: 600px;
+	width: 100%;
+	flex: 0 0 66.66%;
+	order: 2;
+}
+.bariosa__left{
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 33.33%;
+
+}
+.bariosa__image{
+	
+	flex: 0 1 33.33%;
+	background: url('/img/boriosa/img_leftcolomn.png') center/100% 100% no-repeat;
+}
+.bariosa__text{
+	
+	text-align: center;
+	flex: 0 1 66.66%;
+	.bariosa__logo{
+		padding: 70px 0px 30px 0px;
+	}
+	.bariosa__title{
+		padding: 0px 0px 26px 0px;
+		
+	}
+	.bariosa__main-text{
+		font-size: 16px;
+		color: #848789;
+		line-height: 30px;
+		width: 80%;
+		margin: 0 auto;
+		&::after{
+			content: '';
+			display: block;
+			width: 50px;
+			height: 1px;
+			background: #353738;
+			margin: 30px auto 0px;
+			
+		}
+		
+		
+
+	}
+}
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//!retro
+.retro{
+	display: flex;
+	width: 100%;
+	height: 600px;
+
+}
+.retro__left{
+	flex: 0 1 33.33%;
+	background: url('/img/retro/left_logo.png')center no-repeat,url('/img/retro/left_img.png') center/100% 100% no-repeat;
+}
+.retro__middle{
+	text-align: center;
+	flex-direction: column;
+	display: flex;
+	flex: 0 1 33.33%;
+	.retro__icon{
+		padding: 70px 0px 30px 0px;
+	}
+	.retro__title{
+		padding: 0px 0px 26px 0px;
+
+	}
+	.retro__main-text{
+		font-size: 16px;
+		color: #848789;
+		line-height: 30px;
+		width: 80%;
+		margin: 0 auto;
+		&::after{
+			content: '';
+			display: block;
+			width: 50px;
+			height: 1px;
+			background: #353738;
+			margin: 30px auto 0px;
+			
+		}
+	}
+}
+.retro__right{
+	flex: 0 1 33.33%;
+	background: url('/img/retro/right_img.png') center/100% 100% no-repeat;
+}
+.retro__img{
+	flex: 0 1 33.33%;
+	background: url('/img/retro/midle_img.png') center /100% 100% no-repeat;
+}
+.retro__text{
+	flex: 0 1 66.66%;
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//!tweet
+.tweet{
+	width: 100%;
+	height: 469px;
+	text-align: center;
+}
+.tweet {
+	background: #f7f7f7;
+	// .tweet__icon
+
+	&__icon {
+		padding: 124px 0px 37px 0px;
+		
+	}
+
+	// .tweet__name
+
+	&__name {
+		font-size: 18px;
+		letter-spacing: 1.8px;
+		color: #353738;
+		font-weight: bold;
+		padding: 0px 0px 27px 0px;
+		
+		span{
+			
+			color: #848789;
+		}
+	}
+
+	// .tweet__text
+
+	&__text {
+	font-size: 25px;
+	font-style: italic;
+	line-height: 34px;
+	color: #848789;
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+	&::after{
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 160px;
+		display: block;
+		width: 11px;
+		height: 11px;	
+		margin-bottom: 100px;
+		border-radius: 50%;
+		border: 1px solid #a9afb3;
+		
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		left: 48.5%;
+		top: 160px;
+		display: block;
+		width: 11px;
+		height: 11px;
+		margin-bottom: 100px;
+		border-radius: 50%;
+		border: 1px solid #a9afb3;
+		background: #a9afb3;
+		
+	}
+	span::after{
+		content: '';
+		position: absolute;
+		left: 51.5%;
+		top: 160px;
+		display: block;
+		width: 11px;
+		height: 11px;
+		margin-bottom: 100px;
+		border-radius: 50%;
+		border: 1px solid #a9afb3;
+		
+	}
+}
+}
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//!shop
+.shop {
+width: 100%;	
+height: 534px;
+display: flex;
+	// .shop__item1
+
+	&__item1 {
+		flex: 0 1 33.33%;
+
+	}
+}
+.item1 {
+	display: flex;
+	height: 534px;
+	flex-direction: column;
+	// .item1__column1
+
+	&__column1 {
+		flex: 0 1 50%;
+		display: flex;
+		height: 267px;
+
+	}
+
+	// .item1__left
+
+	&__left {
+		flex: 0 1 50%;
+		background: url('/img/shop/img-01.png') center/100% 100% no-repeat;
+		
+	}
+
+	// .item1__right
+
+	&__right {
+		flex: 0 1 50%;
+		background: url('/img/shop/img-02.png') center/100% 100% no-repeat;
+	}
+
+	// .item1__column2
+
+	&__column2 {
+		flex: 0 1 50%;
+		height: 267px;
+		background: url('/img/shop/img-03.png') center/100% 100% no-repeat;
+	}
+}
+.shop__item2{
+	flex: 0 1 33.33%;
+	// width: 100%;
+	display: flex;
+	height: 534px;
+	.item2__left{
+		flex: 0 1 50%;
+		height: 534px;
+		background: url('/img/shop/img-04.png') center/100% 100% no-repeat;
+	}
+	.item2__right{
+		flex: 0 1 50%;
+		height: 534px;
+		background: url('/img/shop/img-05.png') center/100% 100% no-repeat;
+	}
+}
+.shop__item3{
+	flex: 0 1 33.33%;
+	display: flex;
+	flex-direction: column;
+	.item3__row-top{
+		text-align: center;
+		.item3__icon{
+			padding: 104px 0px 15px 0px;
+		}
+		.item3__row-top-text{
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 14px;
+			letter-spacing: 2.8px;
+			color: white;
+		}
+		height: 267px;
+		flex: 0 1 50%;
+		background: url('/img/shop/img-06.png') center/100% 100% no-repeat;
+	}
+	.item3__row-bottom{
+		flex: 0 1 50%;
+		display: flex;
+		.row-bottom__left{
+			flex: 0 1 50%;
+			background: url('/img/shop/img-07.png') center/100% 100% no-repeat;
+			height: 267px;
+		}
+		.row-bottom__right{
+			flex: 0 1 50%;
+			background: url('/img/shop/img-08.png') center/100% 100% no-repeat;
+			height: 267px;
+		}
+	}
+}
+	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	//!black button
+.black{
+width: 100%;
+height: 200px;
+background: #282f35;
+text-align: center;
+padding: 75px 0px;
+}
+.black__button{
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+	letter-spacing: 2.8px;
+	background: #282f35;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	padding: 20px 60px;
+}
+
+
+	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //!Footer rdy
 
 .container{
