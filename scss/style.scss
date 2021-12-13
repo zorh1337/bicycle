@@ -724,6 +724,9 @@ font-style: italic;
 	.bariosa {
 		flex-direction: column;
 	}
+	.bariosa__text .bariosa__main-text{
+		text-align: center;
+	}
 	.bariosa__right {
 		flex: 1 0 300px;
 	}
@@ -747,7 +750,9 @@ font-style: italic;
 		flex: 1 0 200px;
 	}
 }
-
+.retro__middle .retro__main-text {
+	text-align: center;
+}
 .retro__right {
 	flex: 1 0 400px;
 	order: 3;

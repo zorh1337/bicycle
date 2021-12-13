@@ -912,6 +912,9 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .bariosa__text .bariosa__main-text {
+    text-align: center;
+  }
   .bariosa__right {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 300px;
@@ -949,6 +952,9 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 200px;
             flex: 1 0 200px;
+  }
+  .retro__middle .retro__main-text {
+    text-align: center;
   }
   .retro__right {
     -webkit-box-flex: 1;
