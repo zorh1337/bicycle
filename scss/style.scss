@@ -8,6 +8,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	font-family: 'lato';
+	min-width: 240px;
 
 }
 header{
@@ -107,6 +108,11 @@ footer{
 //!main
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //!generation
+.generation__container{
+	max-width: 1109px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
 .title{
 	font-size: 18px;
 	text-transform: uppercase;
@@ -134,7 +140,7 @@ footer{
 	font-size: 18px;
 	line-height: 34px;
 	color: #848789;
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 
 }
@@ -305,6 +311,11 @@ footer{
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //!tweet
+.tweet__container{
+	margin: 0 auto;
+	max-width: 1066px;
+	padding: 0px 15px;
+}
 .tweet{
 	width: 100%;
 	height: 469px;
@@ -341,7 +352,7 @@ footer{
 	font-style: italic;
 	line-height: 34px;
 	color: #848789;
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
 	&::after{
@@ -514,7 +525,11 @@ height: 469px;
 text-align: center;
 background: white;
 padding: 110px 0px 0px 0px;
-
+.mail__container{
+	margin: 0 auto;
+	max-width: 564px;
+	padding: 0px 15px;
+}
 }
 .mail__logo{
 padding: 0px 0px 40px 0px;
@@ -530,15 +545,17 @@ padding: 0px 0px 40px 0px;
 
 }
 .mail__textbox{
-width: 400px;
-height: 70px;
-border: 1px solid #d3d7d9;
-padding: 28px 0px 24px 28px;
+	width: 400px;
+	height: 70px;
+	border: 1px solid #d3d7d9;
+	padding: 28px 0px 24px 28px;
+	margin: 0px 0px 10px 0px;
+	
 
-font-size: 20px;
-line-height: 24px;
-color: #929292;
-font-style: italic;
+	font-size: 20px;
+	line-height: 24px;
+	color: #929292;
+	font-style: italic;
 
 
 }
@@ -641,11 +658,11 @@ font-style: italic;
 }
 
 @media(max-width:1090px){
-
-
 	.generation {
-		padding: 90px 0px 90px;
+		padding: 45px 0px 45px;
 	}
+
+	
 //!vintage
 	.vintage__left {
 		height: 500px;
@@ -757,6 +774,45 @@ font-style: italic;
 	flex: 1 0 400px;
 	order: 3;
 }
+.shop {
+	flex-direction: column-reverse;
+	height: auto;
+}
+.shop__item3 .item3__row-top .item3__icon {
+	padding: 30px 0px 10px 0px;
+	
+}
+.shop__item3 .item3__row-top .item3__row-top-text {
+padding: 0px 0px 20px 0px;
+}
+
+//!tweet
+.tweet{
+	height: auto;
+}
+.tweet__text {
+	font-size: 18px;
+}
+.generation__text {
+	font-size: 16px;
+
+}
+.tweet__icon {
+	padding: 60px 0px 17px 0px;
+}
+.tweet__text::after {
+	margin-bottom: 50px;
+	top: 90px;
+}
+.tweet__text::before {
+	margin-bottom: 50px;
+	top: 90px;
+}
+.tweet__text span::after {
+	margin-bottom: 50px;
+	top: 90px;
+}
+
 }
 
 
@@ -771,6 +827,31 @@ font-style: italic;
 @media(max-width:780px){
 
 }
-@media(max-width:445px){
+@media(max-width:530px){
+	
+	.footer{
+		flex-direction: column;
+		height: auto;
+		text-align: center;
+		
+	}
+	.footer__item1{
+		flex: 1 1 33.33%;
+		align-self: center;
+		margin-bottom: 25px;
+	}
+	.footer__item2{
+		flex: 1 1 33.33%;
+		align-self: center;
+		margin-bottom: 25px;
+	}
+	.footer__item3{
+		flex: 1 1 33.33%;
+		align-self: center;
+		margin-left: 0;
+	}
+	.mail__textbox {
+		max-width: 240px;
+	}
 
 }
