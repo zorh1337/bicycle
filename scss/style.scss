@@ -623,7 +623,21 @@ font-style: italic;
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //!media
 @media(max-width:1170px){
-	
+	.bariosa__right {
+		height: 400px;
+	}
+	.bariosa__text .bariosa__logo {
+		padding: 20px 0px  25px 0px;
+	}
+	.bariosa__text .bariosa__main-text::after {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.bariosa__text .bariosa__main-text {
+		font-size: 14px;
+		width: 90%;
+		text-align: left;
+	}
 }
 
 @media(max-width:830px){
